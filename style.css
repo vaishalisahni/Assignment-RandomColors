@@ -9,6 +9,8 @@ main{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding: 30px;
+    flex-wrap: wrap;
 }
 .box{
     width: 200px;
