@@ -9,12 +9,42 @@ main{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 30px;
+    padding: 50px 30px;
     flex-wrap: wrap;
+    align-content: center;
 }
 .box{
     width: 200px;
     height: 200px;
     padding: 20px;
     border: black 2px solid;
+}
+@media (max-width: 1024px) {
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Small screens (Phones) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 15px;
+        /* height: auto; */
+        padding: 30px;
+    }
+    
+    .box {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Extra Small screens */
+@media (max-width: 480px) {
+    .box {
+        width: 100px;
+        height: 100px;
+    }
 }
